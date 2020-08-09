@@ -1,18 +1,25 @@
 # TO-DO: Complete the selection_sort() function below
 def selection_sort(arr):
     # loop through n-1 elements
-    for i in range(0, len(arr) - 1):
-        cur_index = i
-        smallest_index = cur_index
+    for i in range(len(arr)):
+        smallest_index = i
         # TO-DO: find next smallest element
         # (hint, can do in 3 lines of code)
-        for j in range(cur_index, len(arr) - 1):
-            if arr[j] < smallest_index:
-                smallest_index = arr[j]
+        for j in range(i + 1, len(arr)):
+            if arr[j] < arr[smallest_index]:
+                smallest_index = j  # bookmark this index position holding the lowest value thus far, while we continue investigating the rest of the array for smaller values
         # TO-DO: swap
-        # Your code here
-
+        arr[i], arr[smallest_index] = arr[smallest_index], arr[i]
     return arr
+
+# def selection_sort(arr):
+#     for i in range(len(arr) - 1):
+#         min_index = i
+#         for j in range(i+1, len(arr) - 1):
+#             if arr[j] < arr[min_index]:
+#                 min_index = j
+#         arr[i], arr[min_index] = arr[min_index], arr[i]
+#     return arr
 
 
 arr1 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
