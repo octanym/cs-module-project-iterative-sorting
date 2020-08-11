@@ -7,8 +7,9 @@
 ## Objectives
 
 - describe the differences between Linear and Binary Search algorithms
-- define what runtime complexity is, differentiate between various classifications and categorize the performance of an algorithm using Big O notation
+- define what runtime complexity is, differentiate between various classifications and catee
 - distinguish when to use, classify the performance, and implement code to conduct classic iterative sorting algorithms
+- text change for purpose of commit
 
 ## Introduction
 
@@ -159,7 +160,7 @@ So the total space complexity for this algorithm is:
 Again, compare to the `O(1)` space complexity of the initial iterative solution.
 
 In some languages, notably
-[Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language)) and other
+[Lisp](<https://en.wikipedia.org/wiki/Lisp_(programming_language)>) and other
 [functional programming
 languages](https://en.wikipedia.org/wiki/Functional_programming), you can write
 recursive solutions with `O(1)` space complexity. These languages take advantage
